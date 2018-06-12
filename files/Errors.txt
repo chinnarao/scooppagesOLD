@@ -1,0 +1,30 @@
+An unhandled exception occurred while processing the request.
+
+NodeInvocationException: The Node invocation timed out after 60000ms.
+You can change the timeout duration by setting the InvocationTimeoutMilliseconds property on NodeServicesOptions.
+
+The first debugging step is to ensure that your Node.js function always invokes the supplied callback (or throws an exception synchronously), even if it encounters an error. Otherwise, the .NET code has no way to know that it is finished or has failed.
+Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance+<InvokeExportAsync>d__13.MoveNext()
+
+NodeInvocationException: The Node invocation timed out after 60000ms.
+ You can change the timeout duration by setting the InvocationTimeoutMilliseconds property on NodeServicesOptions. The first debugging step is to ensure that your Node.js function always invokes the supplied callback (or throws an exception synchronously), even if it encounters an error. Otherwise, the .NET code has no way to know that it is finished or has failed.
+=====================================================================================================================================================================================
+DEBUGGER:
+
+the breakpoint will not currently be hit. No code has been loaded for this code location
+-----------
+Just something simple to try - you may have tried it already. Right click the Solution in solution explorer, click "clean solution", this deletes all the compiled and temporary files associated with a solution.
+-------------
+First try rebuilding your project by right mouse click the project > Rebuild If that doesn't work, try a clean of the project (right mouse click on the project > clean)
+
+If that didn't work check this:
+
+1.Right mouse click your project
+2.select [Properties]
+3.select the [Build] tab
+4.make sure [Define DEBUG constant] and [Define TRACE constant] are checked
+5.Click the [Advanced] button at the bottom of the Build tabpage
+6.Make sure that [Debug Info:] is set to [full]
+7.Click [OK] and rebuild the project ;-)
+(step 6 generates the .pdb files, these are the debugging symbols)
+=====================================================================================================================================================================================

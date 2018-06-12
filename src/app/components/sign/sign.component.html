@@ -1,0 +1,63 @@
+<mat-tab-group [(selectedIndex)]="activeTabIndex">
+  <mat-tab label="Log In">
+    <mat-card>
+      <mat-card-content [formGroup]="lFG">
+        <mat-input-container>
+          <input type="email" matInput formControlName="email" placeholder="Email" required>
+        </mat-input-container>
+        <div *ngIf="lFG.get('email').touched && lFG.get('email').invalid" class="error">
+          <div *ngIf="lFG.get('email').hasError('required')">Email is Required!</div>
+          <div *ngIf="lFG.get('email').hasError('email') && !lFG.get('email').hasError('required')">Invalid Email!</div>
+        </div>
+        <mat-input-container>
+          <input type="password" matInput formControlName="pwd" placeholder="Password" required>
+        </mat-input-container>
+        <div *ngIf="lFG.get('pwd').touched && lFG.get('pwd').invalid" class="error">
+          <div *ngIf="lFG.get('pwd').hasError('required')">Password is Required!</div>
+          <div *ngIf="lFG.get('pwd').hasError('minlength') && !lFG.get('pwd').hasError('required')">Less than 4 chars!</div>
+          <div *ngIf="lFG.get('pwd').hasError('maxlength') && !lFG.get('pwd').hasError('required')">Greater than 16 chars!</div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button class="btn" (click)="dialogRef.close()">Cancel</button>
+        <button mat-raised-button class="btn" [disabled]="lFG.invalid" (click)="login()">Login</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Sign Up">
+    <mat-card>
+      <mat-card-content [formGroup]="rFG">
+        <mat-input-container>
+          <input type="email" matInput formControlName="email" placeholder="Email" required>
+        </mat-input-container>
+        <div *ngIf="rFG.get('email').touched && rFG.get('email').invalid" class="error">
+          <div *ngIf="rFG.get('email').hasError('required')">Email is Required!</div>
+          <div *ngIf="rFG.get('email').hasError('email') && !rFG.get('email').hasError('required')">Invalid Email!</div>
+        </div>
+        <div formGroupName="pwdFG">
+          <mat-input-container>
+            <input type="password" matInput formControlName="pwd" placeholder="Password" required>
+          </mat-input-container>
+          <div *ngIf="rFG.get('pwdFG.pwd').touched && rFG.get('pwdFG.pwd').invalid" class="error">
+            <div *ngIf="rFG.get('pwdFG.pwd').hasError('required')">Password is Required!</div>
+            <div *ngIf="rFG.get('pwdFG.pwd').hasError('minlength') && !rFG.get('pwdFG.pwd').hasError('required')">Less than 4 chars!</div>
+            <div *ngIf="rFG.get('pwdFG.pwd').hasError('maxlength') && !rFG.get('pwdFG.pwd').hasError('required')">Greater than 16 chars!</div>
+          </div>
+          <mat-input-container>
+            <input type="password" matInput formControlName="cpwd" placeholder="Confirm Password" required>
+          </mat-input-container>
+          <div *ngIf="rFG.get('pwdFG.cpwd').touched && rFG.get('pwdFG.cpwd').invalid" class="error">
+            <div *ngIf="rFG.get('pwdFG.cpwd').hasError('required')">Confirm Password is Required!</div>
+            <div *ngIf="rFG.get('pwdFG.cpwd').hasError('minlength') && !rFG.get('pwdFG.cpwd').hasError('required')">Less than 4 chars!</div>
+            <div *ngIf="rFG.get('pwdFG.cpwd').hasError('maxlength') && !rFG.get('pwdFG.cpwd').hasError('required')">Greater than 16 chars!</div>
+            <!-- <div *ngIf="rFG.get('pwdFG').hasError('mismatch')">Passwords are mismatch!</div> -->
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button class="btn" (click)="dialogRef.close()">Cancel</button>
+        <button mat-raised-button class="btn" [disabled]="rFG.invalid" (click)="register()">Register</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

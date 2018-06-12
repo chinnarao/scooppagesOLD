@@ -1,0 +1,17 @@
+https://github.com/cornflourblue/angular2-registration-login-example
+
+http://embed.plnkr.co/9luTng/?show=preview
+
+social:
+https://stackblitz.com/edit/ngx-sharebuttons?file=app%2Fapp.component.ts
+https://murhafsousli.github.io/ngx-sharebuttons/#/getting-started
+https://github.com/MurhafSousli/ngx-sharebuttons
+https://megatags.co/#generate-tags
+
+https://github.com/thatisuday/ngx-social-signin
+
+https://github.com/MurhafSousli/ngx-sharebuttons
+
+https://github.com/manfredsteyer/angular-oauth2-oidc
+
+https://auth0.com/blog/whats-new-in-angular5/

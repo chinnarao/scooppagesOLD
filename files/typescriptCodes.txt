@@ -1,0 +1,49 @@
+userList : User[] = [];
+------------------------------------------
+class foo {
+    private _bar:boolean = false;
+    get bar():boolean {
+        return this._bar;
+    }
+    set bar(theBar:boolean) {
+        this._bar = theBar;
+    }
+}
+-------------------------------------------
+private _rFG:FormGroup;
+  public get rFG():FormGroup {
+    this._rFG = new FormGroup({
+            email: new FormControl('', [Validators.required, Validators.email]),
+            pwdFG: this.pwdFG,
+          });  
+      return this._rFG;
+  }
+
+  private _pwdFG:FormGroup;
+  public get pwdFG():FormGroup {
+    this._pwdFG = new FormGroup({
+            pwd: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(16)]),
+            cpwd: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(16)]),
+          });  
+      return this._pwdFG;
+  }
+  ======================================================================
+  Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+')
+  emailValidator(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)])
+  =======================================================================
+  export function ValidateUrl(control: AbstractControl) {
+  if (!control.value.startsWith('https') || !control.value.includes('.io')) {
+    return { validUrl: true };
+  }
+  return null;
+}
+================================================================================================
+const input = document.querySelector('input[type=text]');
+const p = document.querySelector('p');
+
+input.addEventListener('input', event => {
+  subject.next(event.target.value);
+});
+=========================================================================================================
+coll.forEach(item => {});
+===============================

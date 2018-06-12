@@ -1,0 +1,12 @@
+https://weblog.west-wind.com/posts/2011/apr/01/displaying-json-in-your-browser
+
+
+
+security:
+https://support.kaspersky.com/us/12489?cid=KIS_18.0&utm_source=interceptor&utm_medium=product&utm_campaign=KIS_18.0#block4
+https://support.kaspersky.com/us/7640
+
+
+css
+https://stackoverflow.com/questions/tagged/ngx-bootstrap
+https://angular.io/guide/component-styles

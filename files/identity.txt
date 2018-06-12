@@ -1,0 +1,17 @@
+use template : .net core class library (2.0)
+nuget:
+1. Microsoft.AspNetCore.All (2.0.0)
+2. Microsoft.EntityFrameworkCore.Design (2.0.0)
+3. Microsoft.EntityFrameworkCore.Tools.DotNet (2.0.0)
+
+worked success connection string : 
+"Server=DESKTOP-HHRULCT\\MSSQLSERVER2016;Database=testxyz123;Trusted_Connection=True;MultipleActiveResultSets=true"
+"Server=DESKTOP-HHRULCT\\MSSQLSERVER2016;Database=testxyz123;Trusted_Connection=True;MultipleActiveResultSets=true"
+
+
+PM> Add-Migration -Name "Initial" -Context "AppIdentityDbContext" -Project "sp.identity" -StartupProject "sp.identity"
+PM> Update-Database -Context "AppIdentityDbContext" -Project "sp.identity" -StartupProject "sp.identity"
+PM> Remove-Migration -Context "AppIdentityDbContext" -Project "sp.identity" -StartupProject "sp.identity"
+PM> Remove-Migration -Force -Context "AppIdentityDbContext" -Project "sp.identity" -StartupProject "sp.identity"
+
+	

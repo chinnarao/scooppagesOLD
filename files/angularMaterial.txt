@@ -1,0 +1,41 @@
+
+Core:
+demo app under src folder : https://github.com/angular/material2
+https://material.angular.io/guide/theming
+https://material.angular.io/components/dialog/api#MatDialogConfig
+https://material.io/guidelines/style/icons.html#icons-system-icons
+https://github.com/google/material-design-icons
+
+articles:
+http://www.ianposton.com/angular4-angular-material2-table-and-dialog-mysportsfeeds-api-part-6/
+https://medium.com/codingthesmartway-com-blog/angular-material-part-2-popups-modals-1ed0c2405f18
+https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html
+
+Forum:
+https://stackoverflow.com/questions/tagged/angular-material2
+
+videos:
+https://www.youtube.com/watch?time_continue=3&v=xJJ_NDqvuCk
+
+
+codes:
+dialog: https://github.com/angular/material/issues/5911
+
+
+icons:
+https://material.angular.io/components/icon/overview
+
+styles.css:
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+ex: <mat-icon>menu</mat-icon> or home, 
+
+
+login form:
+https://medium.com/front-end-hacking/reactive-forms-and-form-validation-with-angular-fdcbcf98e1e8
+
+https://www.codeproject.com/Articles/1191341/Angular-to-Angular-with-Angular-Material-Compo
+
+
+https://coursetro.com/posts/code/113/How-to-Build-an-Angular-5-Material-App
+
+https://themeforest.net/item/fury-angular-2-material-design-admin-template/19325966

@@ -1,0 +1,33 @@
+services.AddCors(options =>
+            {
+                options.AddPolicy(POLICY_NAME, policy => { policy.AllowAnyHeader().AllowAnyHeader().AllowAnyMethod();});
+            });
+
+			app.UseCors(builder =>
+                            builder.WithOrigins("http://example.com").AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod()
+            );
+==============
+constructor
+ngOnChanges
+ngOnInit
+ngDoCheck
+ngAfterContentInit
+ngAfterContentChecked
+ngAfterViewInit
+ngAfterViewChecked
+ngOnDestroy
+==================================
+.centered {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+======================================================================
+Change
+
+<a href="" (click)="passTheSalt()">Click me</a>
+into
+
+<a [routerLink]="" (click)="passTheSalt()">Click me</a>
+A link will be displayed with a hand icon when hovering over it and clicking it won't trigger any route.
+======================================================================

@@ -1,0 +1,5 @@
+https://www.angularjs4u.com/menu-and-navigation/14-angular-4-menus-examples/
+
+full screen popup with x icon: https://codepen.io/curt_puckett/pen/rLjPPQ
+
+https://github.com/angular/material2/tree/master/src/demo-app/menu

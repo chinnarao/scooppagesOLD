@@ -1,0 +1,96 @@
+open command palette from left side setting icon
+type git:clone , it is a predefined command, you can see intellisense too
+next , typed cloned copied url from git repository online
+https://github.com/chinnarao/scooppages.git
+would you like to open cloned repository
+or in powershell : git clone https://github.com/chinnarao/scooppages.git
+===========================
+check - in codes:
+left , click , git icon 
+click + icon for stage
+click tick mark for commit
+
+============================
+new laptop problem:
+git config --global user.email "chinnarao@live.com"
+============================
+cmd to powershell change in integrated terminal:
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+}
+in the user settings file
+Set-Location D:
+clear for powershell area
+============================================================================================================
+finally :
+npm install
+the above command will execute and download all packages.
+
+==========================================================================
+ng build 
+for build and bundling the app for host ready
+running the app: ng serve --open
+
+“Port 4200 is already in use” when running the ng serve command
+solution: tip: https://github.com/angular/angular-cli
+ng serve --host 0.0.0.0 --port 4201
+execute and you can see webpack : Compiled successfully.
+again go back to powershell from node terminal and execute ng serve --open , now this time successfully open in IE , http://localhost:4200
+enjoy the tip.
+=======================================================================================================================================
+for hosting from github:
+https://pages.github.com/
+
+
+======================================
+Update for @angular/cli final: Inside angular-cli.json you can specify the port in the defaults:
+
+"defaults": {
+  "serve": {
+    "port": 1337
+  }
+}
+In Angular 2 cli@2.3.1,
+To run a new project on the different port, one way is to specify the port while you run ng serve command.
+ng serve --port 4201
+or the other way, you can edit your package.json file scripts part and attached the port to your start variable like I mentioned below and then simply run "npm start"
+ "scripts": {
+
+    "ng": "ng",
+    "start": "ng serve --port 4201",
+    ... : ...,
+    ... : ....
+}
+this way is much better where you don't need to define port explicitly every time.
+=================================================
+Scaffold Angular components using Angular CLI
+
+Scaffold	Usage
+Component	ng g component my-new-component
+Directive	ng g directive my-new-directive
+Pipe	ng g pipe my-new-pipe
+Service	ng g service my-new-service
+Class	ng g class my-new-class
+Guard	ng g guard my-new-guard
+Interface	ng g interface my-new-interface
+Enum	ng g enum my-new-enum
+Module	ng g module my-module
+--------------------------------------------------------
+npm upgrade -g @angular/cli
+npm install -g @angular/cli@latest
+npm install --save-dev @angular/cli@latest
+npm i -g npm
+--------------------------------------------------------------
+npm install -g angular-cli - if its your first time
+npm install -g @angular/cli@latest - if u already installed, so for updating
+npm install --save-dev @angular/cli@latest - for local update
+--------------------------------------------------------------
+npm install @angular/{animations,common,compiler,compiler-cli,core,forms,http,platform-browser,platform-browser-dynamic,platform-server,router}@next typescript@2.4.2 rxjs@'^5.5.2'
+--------------------------------------------------------------------------------------------
+npm install typescript@latest -g   -for global
+npm install --save-dev typescript@latest  -for local , inside package.json will modify
+----------------------------------------------------------------------------------------------
+npm install typescript@'>=2.4.2 <2.5.0'   -info: warning : "@angular/compiler-cli@5.0.1 requires typescript@'>=2.4.2 <2.5.0' but 2.6.2 was found instead."
+------------------------------------------------------------------------------------------------
+git config --global user.email "chinnarao@live.com"
+------------------------------------------------------------------------------------------------

@@ -1,0 +1,43 @@
+https://www.technouz.com/4628/whats-new-angular-5/
+
+***** : http://skillshare.top/skillshare/angular-4-forms-part-2-angular-4-reactive-forms-angular-4-form-validation-edureka/
+
+https://medium.com/codingthesmartway-com-blog/angular-5-forms-update-9587c3735cd3
+
+https://angularfirebase.com/lessons/multi-step-signup-firebase-email-password-auth-angular-reactive-forms/
+
+https://viblo.asia/p/image-validation-on-angular-24-V3m5WOzb5O7
+http://www.damirscorner.com/blog/posts/20170421-CustomAngularValidatorsWithDependencies.html
+
+http://www.talkinghightech.com/en/angular-2-building-reactive-forms/
+https://medium.com/front-end-hacking/reactive-forms-and-form-validation-with-angular-fdcbcf98e1e8
+
+
+======================================================================================
+export const PasswordValidator = (password?:RegExp): ValidatorFn => {
+    return (control:AbstractControl): {[key: string]: any}  => {
+        let error = null;
+        if (password && !password.test(control.value)) {
+            error = {
+                password:control.value
+            }
+        }
+        return error;
+    }
+}
+
+export class NumberValidators {
+    static isNumberCheck(): ValidatorFn {
+        return  (c: AbstractControl): {[key: string]: boolean} | null => {
+            if (c.value !== undefined && (isNaN(c.value))) {
+                return { 'value': true };
+            };
+            return null;
+        };
+    }
+}
+
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+======================================================================================

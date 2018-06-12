@@ -1,0 +1,25 @@
+.menu{
+  padding: 1px;
+  background-color: #A9A9A9;
+}
+
+.menu .menu-fill-remaining{
+  flex: 1 1 auto;
+}
+
+.menu .menu-signin {
+  -webkit-justify-content: flex-end; /* Safari */
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.menu .menu-signup {
+  -webkit-justify-content: flex-end; /* Safari */
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+/* .mat-toolbar-single-row {
+  padding: 0 0px;
+  height: 50px;
+} */

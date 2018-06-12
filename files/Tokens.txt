@@ -1,0 +1,12 @@
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyJjaGlubmFyYW9AbGl2ZS5jb20iLCJjaGlubmFyYW9AbGl2ZS5jb20iXSwianRpIjoiZDZhYzI4OWMtNTg0Ny00NmI2LTkyMzEtNTEwNzNmN2FiNzQyIiwiZW1haWwiOiJjaGlubmFyYW9AbGl2ZS5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiaW5kaWEiLCJuYmYiOjE1MDgwNDk5OTYsImV4cCI6MTUwODMwOTE5NiwiaWF0IjoxNTA4MDQ5OTk2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMTkxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDE5MSJ9.CXyHm3nRFwEWRE4qhgQtbisr6f3-qEn-A-ZTKqzHdMk"
+
+
+
+
+
+
+
+=======================================================================================================
+http://blog.getpostman.com/2014/01/28/using-self-signed-certificates-with-postman/
+
+https://github.com/aspnet/Home/issues/2193 ===== https://github.com/lucassklp/DefaultArchitecture

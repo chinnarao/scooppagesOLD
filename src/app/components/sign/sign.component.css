@@ -1,0 +1,25 @@
+/* form {
+    display: flex;
+    flex-direction: column;
+} */
+.error {
+  color: red;
+  font-size: smaller;
+}
+/* .error-msg {
+  display: block;
+  position: absolute;
+  font-size: 75%;
+  bottom: -2em;
+} */
+
+
+/* .mat-card-actions, .mat-card-content, .mat-card-subtitle, .mat-card-title {
+    margin-bottom: 0px;
+} */
+.mat-input-container{
+  margin-bottom: -1em;
+}
+/* .mat-tab-group {
+    width: 200px;
+} */

@@ -1,0 +1,94 @@
+﻿form {
+    display: flex;
+    flex-direction: column;
+}
+.error {
+  color: red;
+}
+.error-msg {
+  display: block;
+  position: absolute;
+  font-size: 75%;
+  bottom: -2em;
+}
+.mat-input-container {
+  margin-bottom: .5em;
+}
+
+.mat-card-actions, .mat-card-content, .mat-card-subtitle, .mat-card-title {
+    margin-bottom: 0px;
+}
+
+.mat-tab-group {
+    width: 200px;
+}
+/* main
+{
+    min-width: 300px;
+    max-width: 300px;
+    padding: 0px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+section
+{
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input
+{
+    display: none;
+}
+
+label
+{
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+    label:before
+    {
+        font-family: fontawesome;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+
+    label[for*='1']:before
+    {
+        content: '\f007';
+    }
+
+    label[for*='2']:before
+    {
+        content: '\f234';
+    }
+
+    label:hover
+    {
+        color: #888;
+        cursor: pointer;
+    }
+
+input:checked + label
+{
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2
+{
+    display: block;
+} */
+
+

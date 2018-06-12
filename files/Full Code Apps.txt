@@ -1,0 +1,11 @@
+https://github.com/emonney/QuickApp
+https://github.com/mohankumaranna
+https://github.com/asadsahi/AspNetCoreSpa
+https://github.com/damienbod
+https://github.com/hayleejane3/hayleemonteiro
+https://github.com/RickStrahl/AlbumViewerVNext
+https://github.com/gdi2290/angular-starter
+https://github.com/hasanhameed07/angular2-dashboard-starter
+https://github.com/ivanderbu2/angular-redux.
+https://github.com/DanWahlin/Angular-ASPNET-Core-Seed
+https://github.com/hayleejane3/hayleemonteiro
